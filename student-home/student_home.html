@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student-home</title>
+    <link rel="stylesheet" href="student-home.css">
+</head>
+
+<body>
+    <h1 class="logo">Quiz Quest</h1>
+    <!-- Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-picture">
+                <!-- Placeholder image -->
+                <img src="image.png" alt="Profile Picture" id="profileImg" onclick="triggerFileInput()">
+                <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="loadImage(event)">
+            </div>
+            <nav>
+                <div class="sidebar-options">
+                    <ul>
+                        <li><a href="#" target="_blank">Profile</a></li>
+                        <li><a href="#">Popular Quizzes</a></li>
+                       
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <header>
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search for quizzes (subject, chapter, topic, upvotes)">
+                <button id="search-btn">🔍</button>
+            </div>
+        </header>
+
+        <!-- Recent quizzes -->
+        <h3>Recent quizzes</h3>
+        <div class="recent-quiz" id="recentQuiz">
+            <p id="noQuizMsg">No quiz to show</p>
+        </div>
+
+        <!-- Subject quizzes -->
+        <h3>Subject quizzes</h3>
+        <div class="subject-quiz">
+            <a href="#"><img src="maths.png" class="quiz-card" alt="Math"></a>
+            <a href="#"><img src=" physics.jpg" class="quiz-card" alt="Physics"></a>
+            <a href="#"><img src=" chemistry.jpg" class="quiz-card" alt="Chemistry"></a>
+        </div>
+    </div>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="student-home.js"></script>
+</body>
+
+</html>

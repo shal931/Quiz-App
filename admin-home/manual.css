@@ -1,0 +1,64 @@
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .form-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .question input {
+    width: calc(100% - 20px);
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  
+  .question label {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  

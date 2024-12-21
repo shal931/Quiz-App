@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="admin-home.css">
+    <script src="admin-home.js"></script>
+</head>
+
+<body>
+    <h1 class="logo">Quiz Quest</h1>
+    <!-- Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile-picture">
+                <!-- Placeholder image -->
+                <img src="image.png" alt="Profile Picture" id="profileImg" onclick="triggerFileInput()">
+                <!-- Upload image -->
+                <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="loadImage(event)">
+            </div>
+            <nav>
+                <div class="sidebar-options">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Create Quiz</a></li>
+                        <li><a href="#">AI-Assisted Quiz</a></li>
+                        <li><a href="#">Manage Quizzes</a></li>
+                        <li><a href="#">View Upvotes</a></li>
+                        <li><a href="#">Analytics</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <header>
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search quizzes or activities">
+                <button id="search-btn">🔍</button>
+            </div>
+        </header>
+
+        <!-- Recent Activity -->
+        <h3>Recent Activity</h3>
+        <div class="recent-activity">
+            <p>No activity to show</p>
+        </div>
+
+        <!-- Admin Actions -->
+        <h3>Admin Actions</h3>
+        <div class="admin-actions">
+            <a href="manualquiz.html" class="action-card gradient1">
+                <p>Create Quiz</p>
+            </a>
+            <a href="aiquiz.html" class="action-card gradient2">
+                <p>AI-Assisted Quiz</p>
+            </a>
+            <a href="#" class="action-card gradient3">
+                <p>Manage Quizzes</p>
+            </a>
+            <a href="#" class="action-card gradient4">
+                <p>View Upvotes</p>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

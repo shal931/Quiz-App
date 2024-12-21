@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Quiz Creator with Firebase</title>
+  <link rel="stylesheet" href="ai.css"> 
+</head>
+<body>
+  <div class="container">
+    <h1>AI Quiz Creator</h1>
+    <div class="section">
+      <label for="section">Section:</label>
+      <input type="text" id="section" class="input-field">
+    </div>
+    <div class="section">
+      <label for="topic">Topic:</label>
+      <input type="text" id="topic" class="input-field">
+    </div>
+    <div class="section">
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty" class="input-field">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <div class="section">
+      <label for="numQuestions">Number of Questions:</label>
+      <input type="number" id="numQuestions" class="input-field">
+    </div>
+    <button class="button" onclick="generateQuiz()">Generate Quiz</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-firestore.js"></script> 
+  <script src="ai.js"></script> 
+</body>
+</html>
